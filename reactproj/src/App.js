@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
-import "./App.css";
 import Calendar from "./components/Calendar.js";
 import Work from "./components/Work.js";
+import "./App.css";
 
 function App() {
   return (
