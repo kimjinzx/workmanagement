@@ -41,8 +41,8 @@
 }
 
 .full-calendar {
-  width: 60vw; /* 1vw는 viewport 너비의 1%에 해당한다. 70vw는 viewport 너비의 70%를 의미한다.*/
-  height: 80vh;
+  width: 50vw; /* 1vw는 viewport 너비의 1%에 해당한다. 70vw는 viewport 너비의 70%를 의미한다.*/
+  height: 70vh;
 }
 
 .selected-date {
