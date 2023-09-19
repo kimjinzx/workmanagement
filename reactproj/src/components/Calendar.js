@@ -4,6 +4,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import koLocale from "@fullcalendar/core/locales/ko";
 import interactionPlugin from "@fullcalendar/interaction";
 import "./Calendar.css";
+// test
 
 const MyFullCalendar = () => {
   // useState 훅을 사용해 선택된 셀(prevDateEl)을 저장한다.
