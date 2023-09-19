@@ -1,0 +1,31 @@
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.seleteDay {
+  background-color: #59a1db;
+}
+
+.today {
+  background-color: hwb(55 87% 0%);
+}
+
+.selected-date-cell {
+  background-color: #59a1db;
+}
+
+.calendar-wrapper {
+  display: flex;
+}
+
+.full-calendar {
+  width: 60vw; /* 1vw는 viewport 너비의 1%에 해당한다. 70vw는 viewport 너비의 70%를 의미한다.*/
+  height: 80vh;
+}
+
+.selected-date {
+  margin-left: 20px;
+  align-self: center;
+}
