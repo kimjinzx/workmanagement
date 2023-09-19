@@ -33,7 +33,7 @@ const finished = 3;
 const theDay = "2023-09-01"
   
   const works = [
-    { classNames: ["custom-event"], title: finished+" / "+alltodo, start: theDay, 
+    { classNames: ["custom-event"], title: finished + " / " + alltodo, date: theDay, 
     backgroundColor : "#FFFFFF", borderColor : "#FFFFFF", textColor : "#0054FF", },
   ];
 
@@ -53,6 +53,13 @@ const theDay = "2023-09-01"
             dayNamesShort={["일", "월", "화", "수", "목", "금", "토"]} // dayNamesShort / monthNames: 요일과 월 이름 설정이다.
             monthNames={[Array(12).keys()].map((i) => `${i + 1}월`)} 
             dateClick={handleDateClick} // dateClick는 날짜 클릭 시 실행할 핸들러 함수이다.
+            eventContent={(arg) => {
+              return {
+                html: `<span style="color:blue">${finished}</span> 
+                       <span style="color:black">/</span> 
+                       <span style="color:red">${alltodo}</span>`
+              };
+            }}
           />
         </div>
 

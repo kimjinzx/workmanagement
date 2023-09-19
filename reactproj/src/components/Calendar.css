@@ -1,26 +1,11 @@
 .custom-event {
   text-align: center;  
-  font-size: 16px;  
+  font-size: 18px;  
   font-weight: 800; 
+
   
 }
 
-
-.custom-event {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 800;
-}
-
- 
-.custom-event.finished {
-  color: green;
-}
-
-
-.custom-event.alltodo {
-  color: red;
-}
 
 
 
@@ -50,8 +35,8 @@
 }
 
 .full-calendar {
-  width: 60vw; /* 1vw는 viewport 너비의 1%에 해당한다. 70vw는 viewport 너비의 70%를 의미한다.*/
-  height: 80vh;
+  width: 50vw; /* 1vw는 viewport 너비의 1%에 해당한다. 70vw는 viewport 너비의 70%를 의미한다.*/
+  height: 70vh;
 }
 
 .selected-date {
