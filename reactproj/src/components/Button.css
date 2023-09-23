@@ -1,4 +1,4 @@
-button {
+.btn {
   display: block;
   width: 100px;
   height: 40px;
@@ -8,4 +8,6 @@ button {
   border: none;
   border-radius: 5px;
   position: absolute;
+  top: 100px;
+  left: 100px;
 }

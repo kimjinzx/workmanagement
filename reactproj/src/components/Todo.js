@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Todo = ({ todo }) => {
   return (
     <li>
-      <input  type={'checkbox'}/>
+      <input type={"checkbox"} />
       <span>{todo}</span>
       ...
     </li>
-  )
-}
+  );
+};
 
-export default Todo
+export default Todo;
