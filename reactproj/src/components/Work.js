@@ -1,39 +1,36 @@
 import React, { useEffect } from "react";
-import Button from "./Button";
 import Todo from "./Todo";
-import './Work.css'
+import "./Work.css";
 
-const Work = ({ date, setDate, todos }) => {  
-  //1분마다 시간 업데이트 
+const Work = ({ date, setDate, todos, selectedDate }) => {
   useEffect(() => {
     const timer = setInterval(() => {
-        setDate(new Date());
+      setDate(new Date());
     }, 6000);
 
     return () => {
-        clearInterval(timer);
+      clearInterval(timer);
     };
   }, []);
 
   return (
     <div className="work">
-
       <div className="date">
         <div className="day">
-          {date.getFullYear()}년 {date.getMonth() + 1}월 {date.getDate()}일,
-        </div>
-        <div className="time">
-          {date.getHours() < 12 ? '오전' : '오후'} {date.getHours() % 12 || 12}시 : {date.getMinutes()}분
+          {selectedDate ? `${selectedDate}` : "날짜를 선택해주세요"}
         </div>
       </div>
 
-      <div className="todo-box"> 
+      <div className="time">
+        {date.getHours() < 12 ? "오전" : "오후"} {date.getHours() % 12 || 12}시
+        : {date.getMinutes()}분
+      </div>
+
+      <div className="todo-box">
         <ul>
-          {todos.map(todo => {
-            return (
-              <Todo todo={todo} />
-            )
-          })}
+          {todos.map((todo, index) => (
+            <Todo key={index} todo={todo} />
+          ))}
         </ul>
       </div>
     </div>
