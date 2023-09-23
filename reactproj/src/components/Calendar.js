@@ -25,7 +25,7 @@ const MyFullCalendar = ({ selectedDate, setSelectedDate }) => {
   const theDay = "2023-09-01";
 
   const works = [
-    {
+    { 
       classNames: ["custom-event"],
       title: count,
       date: theDay,
