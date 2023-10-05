@@ -15,7 +15,7 @@ const MyFullCalendar = () => {
 
     info.dayEl.style.backgroundColor = "#59a1db";
     setPrevDateEl(info.dayEl);
-
+ 
     setSelectedDate(info.dateStr);
   };
 
