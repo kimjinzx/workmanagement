@@ -6,6 +6,9 @@ export const useStore = create((set, get) => ({
   modalIsOpen: false,
   inputValue: "",
   todos: [],
+  prevDateEl: null,
+
+  setPrevDateEl: (el) => set({ prevDateEl: el }),
 
   setSelectedDate: (date) => set({ selectedDate: date }),
   setDate: (date) => set({ date }),

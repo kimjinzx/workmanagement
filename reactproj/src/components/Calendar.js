@@ -4,9 +4,11 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import koLocale from "@fullcalendar/core/locales/ko";
 import interactionPlugin from "@fullcalendar/interaction";
 import "./Calendar.css";
+import { useStore } from "./Store";
 
-const MyFullCalendar = ({ selectedDate, setSelectedDate }) => {
-  const [prevDateEl, setPrevDateEl] = useState(null);
+const MyFullCalendar = () => {
+  const { selectedDate, setSelectedDate, prevDateEl, setPrevDateEl } =
+    useStore();
 
   const handleDateClick = (info) => {
     if (prevDateEl) {
@@ -25,7 +27,7 @@ const MyFullCalendar = ({ selectedDate, setSelectedDate }) => {
   const theDay = "2023-09-01";
 
   const works = [
-    { 
+    {
       classNames: ["custom-event"],
       title: count,
       date: theDay,

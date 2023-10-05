@@ -1,8 +1,8 @@
 import React from "react";
 
-const Todo = ({ todo }) => {
+const Todo = ({ key, todo }) => {
   return (
-    <li>
+    <li key={key}>
       <input type={"checkbox"} />
       <span>{todo}</span>
       ...
